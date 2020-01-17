@@ -1,42 +1,39 @@
-<div class="sticky-nav-wrapper">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light header__margin" ngStickyNav>
-    <a class="navbar-brand" routerLink="">logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-         
-        <!-- <div ngbDropdown class="d-inline-block">
-          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>Action - 1</button>
-            <button ngbDropdownItem>Another Action</button>
-            <button ngbDropdownItem>Something else is here</button>
-          </div> -->
-  
-        <li ngbDropdown class="nav-item">
-          <!-- <a ngbDropdownToggle class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="truge" aria-expanded="false"> -->
-          <a ngbDropdownToggle class="nav-link " href="#" id="navbarDropdownMenuLink" >
-            Services
-          </a>
-          <div ngbDropdownMenu aria-labelledby="navbarDropdownMenuLink">
-            <a ngbDropdownItem href="#">Action</a>
-            <a ngbDropdownItem href="#">Another action</a>
-            <a ngbDropdownItem href="#">Something else here</a>
-          </div>
-        </li>
-  
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/about">About Us</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/blog">Blog <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
+
+<ngx-headroom>
+  <div >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header__margin" >
+      <a class="navbar-brand" routerLink="">logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+           
+          
+    
+          <li ngbDropdown class="nav-item">
+            <!-- <a ngbDropdownToggle class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="truge" aria-expanded="false"> -->
+            <a ngbDropdownToggle class="nav-link " href="#" id="navbarDropdownMenuLink" >
+              Services
+            </a>
+            <div ngbDropdownMenu aria-labelledby="navbarDropdownMenuLink">
+              <a ngbDropdownItem href="#">Action</a>
+              <a ngbDropdownItem href="#">Another action</a>
+              <a ngbDropdownItem href="#">Something else here</a>
+            </div>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about">About Us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/blog">Blog <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</ngx-headroom>

@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +16,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { AboutComponent } from './pages/about/about.component';
 
-import { StickyNavModule } from 'ng2-sticky-nav';
+// import { StickyNavModule } from 'ng2-sticky-nav';
+// import HeadroomModule
+import { HeadroomModule } from '@ctrl/ngx-headroom';
+import { TestingDirective } from './testing.directive';
 
 @NgModule({
   declarations: [
@@ -25,13 +31,19 @@ import { StickyNavModule } from 'ng2-sticky-nav';
     ServicesComponent,
     ContactComponent,
     ErrorComponent,
-    AboutComponent
+    AboutComponent,
+    TestingDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    StickyNavModule 
+    ReactiveFormsModule,
+    // FormsModule,
+    BrowserAnimationsModule,
+    HeadroomModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

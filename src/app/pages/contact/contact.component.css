@@ -1,0 +1,23 @@
+.bg_img{
+    background-image: url('../../../assets/images/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_overlay{
+    background-color: #0000007d;
+    
+    /* margin-top: 50px; */
+
+}
+
+.margin_top{
+    /* margin: 60px auto auto auto; */
+    color:white;
+    padding: 80px 0px 40px 0px;
+}
+._container{
+    margin: auto;
+    color:white;
+    padding: 40px;
+}
