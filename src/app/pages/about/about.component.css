@@ -1,0 +1,102 @@
+.top{
+  background-image: url('../../../assets/images/bg/wave.svg');
+  /* background-image: url('../../../assets/images/contact.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text__container--padding{
+  padding: 170px 50px;
+  /* background: black; */
+}
+
+.container__text{
+  padding: 50px 50px;
+  /* background:#00000082; */
+  color:white;
+  border-radius: 5px;
+  /* margin: 30px; */
+}
+
+.img__container{
+  max-width: 450px;
+  /* padding-top: 100px; */
+}
+
+.col--position{
+  position: relative;
+  min-height: 200px;
+}
+
+.img--position{
+  position: absolute;
+  top: -36px;
+}
+.img__container--padding{
+  padding-top: 100px;
+}
+
+.img__container >img{
+  width: 100%;
+
+}
+
+.purpose__container{
+  background:black;
+  padding: 150px 0px;
+  color:white;
+  text-align: center;
+}
+
+.bg{
+  background-image: url('../../../assets/images/bg/bg3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+   background-position: bottom;
+  /* position: fixed; */
+
+}
+
+.bg--color{
+  background:#000000bd;
+  color:#cecece;
+  /* padding: 100px 0px; */
+  text-align: center;
+}
+
+.value__container{
+  padding: 100px 0px;
+}
+/* .container{
+  background-image: url('../../../assets/images/wave(1).svg');
+   background-image: url('../../../assets/images/contact.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+/* mobile view */
+@media screen and (max-width: 414px){
+  .container__text{
+
+    padding: 50px 20px;
+    color:   white;
+    border-radius: 5px;
+
+}
+.text__container--padding {
+
+    padding: 10px 10px;
+
+}
+
+.purpose__container {
+  padding: 50px 0px;
+
+}
+.img--position {
+    /* position: absolute; */
+    top: -20px;
+    left: -7px;
+}
+}
