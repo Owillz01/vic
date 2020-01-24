@@ -1,3 +1,19 @@
+
+.top_bg{
+  background-image: url('../../../assets/images/bg/Layer.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  font-weight: lighter;
+  /* font-size: 30px; */
+}
+
+.text__container{
+  justify-content: center;
+  margin: 10% 0px;
+justify-content: center;
+}
 .top__page--img{
     width: 100%;
 }
@@ -7,7 +23,7 @@
 .page--text{
     margin-top: 80px;
     /* text-align: center; */
-    font-size: 20px;
+    font-size: 28px;
 }
 .find_out{
     font-size: 20.8px;
@@ -24,21 +40,22 @@
     border-radius: 4px;
     background: #6c63ff;
     border: 1px solid #6c63ff;
-    
+
 }
 .btn__about>a{
     color: white;
     font-weight: bold;
 }
 .our-service{
-    background-color: #3c3a3a;
+    background-color: white;
     padding: 20px;
 }
 .our-service> h2{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    padding: 30px 0px;
+  color:#220a5f;
+text-align: center;
+font-size: 50px;
+padding: 30px 0px;
+font-weight: bold;
 }
 
 .services-container{
@@ -60,7 +77,7 @@
 }
 .our__services--img{
     width: 100%;
-    
+
 }
 .services__container{
     text-align:center;
@@ -68,14 +85,14 @@
 }
 .services__container> button{
     background: none;
-    border: 1px solid #6c63ff;
+    border: 2px solid #220a5f;
     padding: 10px;
 }
 .services__container> button > a{
-    color: white;
+    color:#220a5f;
 }
 .our-mission> h2{
-   
+
     text-align: center;
     font-size: 50px;
     padding: 30px 0px;

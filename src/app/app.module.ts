@@ -20,6 +20,7 @@ import { AboutComponent } from './pages/about/about.component';
 // import HeadroomModule
 import { HeadroomModule } from '@ctrl/ngx-headroom';
 import { TestingDirective } from './testing.directive';
+import { ObersverDirective } from './obersver.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TestingDirective } from './testing.directive';
     ContactComponent,
     ErrorComponent,
     AboutComponent,
-    TestingDirective
+    TestingDirective,
+    ObersverDirective
   ],
   imports: [
     BrowserModule,

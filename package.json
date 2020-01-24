@@ -21,6 +21,7 @@
     "@angular/router": "~8.2.13",
     "@ctrl/ngx-headroom": "^3.0.0",
     "@ng-bootstrap/ng-bootstrap": "^5.1.5",
+    "animate.css": "^3.7.2",
     "bootstrap": "^4.4.1",
     "ng2-sticky-nav": "^6.1.0",
     "rxjs": "~6.4.0",

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -6,18 +6,26 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   constructor() { }
 
+  // @ViewChildren("more") _more : QueryList<any>
   form = new FormGroup({
     bizType : new FormControl(),
     email : new FormControl('', Validators.required)
   })
-  ngOnInit() {
-  }
+
 
   getTips(value){
     console.log(value);
   }
+  //
+  // ngAfterViewInit(){
+  //   let observer = new IntersectionObserver(entries =>{
+  //     console.log(entries)
+  //   })
+  //
+  //   observer.observe(this._more)
+  // }
 }
