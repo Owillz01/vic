@@ -3,17 +3,17 @@
   <div >
     <nav class="navbar navbar-expand-lg navbar-light bg-light header__margin" >
       <a class="navbar-brand" routerLink="">logo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button ngbNavbarToggle class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-           
-          
-    
+
+
+
           <li ngbDropdown class="nav-item">
             <!-- <a ngbDropdownToggle class="nav-link " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="truge" aria-expanded="false"> -->
-            <a ngbDropdownToggle class="nav-link " href="#" id="navbarDropdownMenuLink" >
+            <a ngbDropdownToggle class="nav-link " id="navbarDropdownMenuLink" >
               Services
             </a>
             <div ngbDropdownMenu aria-labelledby="navbarDropdownMenuLink">
@@ -22,7 +22,7 @@
               <a ngbDropdownItem href="#">Something else here</a>
             </div>
           </li>
-    
+
           <li class="nav-item">
             <a class="nav-link" routerLink="/contact">Contact Us</a>
           </li>

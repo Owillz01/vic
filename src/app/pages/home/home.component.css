@@ -31,9 +31,13 @@ justify-content: center;
 }
 .bg{
     background-image: url('../../../assets/images/bg/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+     background-position: bottom;
 }
 .bg__color{
-    background:#0000ff42;
+    background:#0c0c35e0;
 }
 .btn__about{
     padding: 8px;
@@ -74,6 +78,10 @@ font-weight: bold;
     display: flex;
     flex-direction: column;
     text-align: center;
+
+}
+.anim{
+  visibility: hidden;
 }
 .our__services--img{
     width: 100%;
