@@ -1,5 +1,5 @@
-import { Component, AfterViewInit, OnInit,NgModel, OnDestroy, ViewChildren,ViewChild, QueryList, ElementRef } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Component, AfterViewInit, OnInit, OnDestroy, ViewChildren,ViewChild, QueryList, ElementRef } from '@angular/core';
+import { FormGroup, FormControl, NgModel, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +19,7 @@ public _observer : IntersectionObserver;
     email : new FormControl('', Validators.required)
   })
 
-  @ViewChildren('observed') observed : QueryList<NgModel>;
+  @ViewChildren('observed') observed : QueryList<any>;
 
 ngOnInit() : void{
   // this._observer = new IntersectionObserver((entries) => {
@@ -43,16 +43,17 @@ ngOnInit() : void{
 
 ngAfterViewInit() : void{
 
-  this._observer = new IntersectionObserver((entries) => {
+  this._observer = new IntersectionObserver((entries)  => {
 
-    entries.forEach(entry =>{
+    (entries).forEach((entry) =>{
       // if(entry.isIntersecting){
 
       if(entry.isIntersecting){
-        console.log(entry.target.dataset.name, entry.isIntersecting);
+        console.log(entry );
 
         entry.target.classList.add('animated')
-        entry.target.style.visibility = "visible";
+        // console.log(entry.target.style.visibility)
+        entry.target['style'].visibility = "visible";
       }else{entry.target.classList.remove('animated')}
     })
 
